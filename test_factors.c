@@ -21,3 +21,14 @@ int main(void) {
   assert (ret[1] == 13);
   printf("Factors: passed\n");
 }
+int factors(int num,int ret[]) {
+int max=0; int j=0;
+ for (int i=2;num>1;i++) {
+  while (num%i==0) {
+   ret[j]=i;
+   j++;
+   max++;
+   num=num/i;}
+   }
+   return max; }
+   
