@@ -12,9 +12,3 @@ int main(void) {
   assert (max(y, 1) == 5);
   printf("Max: passed\n");
   }
-int max(int numbers[],int num) {
- int ret =numbers[0];
- for (int i=0;i<num;i++) {
-   if (numbers[i]>ret)
-    ret=numbers[i]; }
-    return ret; }
