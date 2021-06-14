@@ -12,14 +12,3 @@ int main(void) {
   assert (mode(y, 1) == 5);
   printf("Mode: passed\n");
   }
-int mode(int numbers[],int num) {
-int count=0;int modevalue=0; int ret;
- for (int i=0;i<num;i++) {
-   for (int j=0;j<num;j++) {
-      if (numbers[i]==numbers[j])
-        count+=1;
-   if (count>modevalue){
-    modevalue=count;
-    ret=numbers[i];}}
-    }
-    return ret;}
